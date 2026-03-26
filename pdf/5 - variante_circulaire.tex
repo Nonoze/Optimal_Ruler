@@ -6,7 +6,7 @@ Définissons $m_{c}(\ell)$ comme le nombre minimal de graduations à placer.
 
 La solution peut donc comprendre moins de graduations puisque la distance entre 2 graduations peut se faire dans les deux sens (sens horaire et antihoraire). Il faut donc seulement pouvoir mesurer des distances entre 1 et $\left\lfloor \frac{\ell}{2} \right\rfloor$. On obtient donc la relation suivante:
 \[
-m_{c}(\ell) \leq m( \left\lfloor \ell/2 \right\rfloor ) \leq 2\sqrt{ \left\lfloor \ell/2 \right\rfloor } \leq \sqrt{2\ell}.
+m_{c}(\ell) \leq m( \left\lfloor \ell/2 \right\rfloor ) \lesssim 2\sqrt{ \left\lfloor \ell/2 \right\rfloor } \lesssim \sqrt{2\ell}.
 \]
 
 Nous pouvons aussi trouver une borne inférieure pour $m_{c}(\ell)$ en utilisant le même raisonnement que pour la règle rectiligne. En effet, avec $n$ graduations, on peut mesurer au plus $n(n-1)$ distances différentes . Il faut donc que:
@@ -28,7 +28,7 @@ Au niveau des solutions parfaites, il est possible de faire des généralisation
 
 \medskip
 
-Tout d'abord, pour qu'une solution parfaite existe, il faut que la règle soit de longueur $\ell = q(q+1) + 1 = q^2 + q + 1$. En effet, il faut que la distance entre chaque paire de graduations soit unique. Pour un nombre $n = q+1$ de graduations, il y a donc $n(n-1) = q(q+1)$ paires, et donc $q(q+1)$ distances distinctes. La longueur vaut cette distance additionnée à 1: $\ell = q(q+1) + 1 = q^2 + q + 1$.
+Tout d'abord, pour qu'une solution parfaite existe, il faut que la règle soit de longueur $\ell = q(q+1) + 1 = q^2 + q + 1$ (pour $q \in \mathbb{N}$). En effet, il faut que la distance entre chaque paire de graduations soit unique. Pour un nombre $n = q+1$ de graduations, il y a donc $n(n-1) = q(q+1)$ paires, et donc $q(q+1)$ distances distinctes. La longueur vaut cette distance additionnée à 1: $\ell = q(q+1) + 1 = q^2 + q + 1$.
 
 \medskip
 

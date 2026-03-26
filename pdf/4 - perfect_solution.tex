@@ -1,4 +1,4 @@
-\subsubsection*{(iv) Déterminer à partir de quel \( \ell \) qu'il n'existe pas de solution parfaite. Une solution parfaite est une configuration de graduations telle que chaque longueur de 1 à \( \ell \) soit mesurable d'une seule manière.}
+\subsubsection*{(iv) Déterminer à partir de quel \( \ell \) qu'il n'existe pas de solution parfaite. Une solution parfaite est une configuration de graduations telle que chaque longueur de 1 à \( \ell \) est mesurable d'une et une seule manière.}
 
 \vspace{1\baselineskip}
 
@@ -6,17 +6,18 @@ Pour simplifier l'analyse, nous allons définir $n = m(\ell)$ (le nombre de grad
 
 \medskip
 
-Une solution est parfaite si et seulement si $ \ell = \binom{n}{2} $.  
+Pour qu'une solution soit parfaite, il faut donc que $\ell = \binom{n}{2}$.
+
 Nous pouvons réécrire la règle en fonction de la distance entre les graduations adjacentes.  
-Soit \( d_i \) la distance entre la graduation \( i \) et la graduation \( i+1 \) pour \( i = 1, 2, \ldots, n-1 \).  
-Ansi, la somme de toutes ces distances vaut \( \ell \).
+Soit \( d_i \) la distance entre la graduation \( i \) et la graduation \( i+1 \) pour \( i \in \llbracket 1, n-1 \rrbracket \).  
+Ansi, la somme de toutes ces distances vaut \( \sum_{i=1}^{n-1} d_i = \ell \).
 
 \medskip
 
 Sous cette forme, la condition d'existence d'une solution parfaite revient à exiger que les sommes de tous les sous-tableaux contigus des distances \( d_i \) soient distinctes et couvrent exactement l'ensemble des longueurs de \( 1 \) à \( \ell \).  
 Autrement dit, pour tout entier $k \in [1, \ell]$, il existe un unique couple \( (i, j) \) tel que  
 \[
-    k = d_i + d_{i+1} + \ldots + d_j .
+    k = d_i + d_{i+1} + \ldots + d_j
 \]
 
 \medskip
@@ -38,10 +39,10 @@ Le tableau $d$ est donc formé d'une permutation de $[1, 2, \ldots, n-1]$ telle 
 \medskip
 
 Montrons maintenant qu'il n'existe pas de solution parfaite pour \( n \geq 5 \). \\
-Pour éviter qu'une longueur soit générée par des sous-tableaux différents, la valeur \(1\) ne peut être adjacente qu'à \(n-1\).  
+Pour éviter qu'une longueur soit mesurable de plusieurs façons, la valeur \(1\) ne peut être adjacente qu'à \(n-1\). 
 On doit donc placer \(1\) à l'une des extrémités du tableau, disons \( d_1 = 1 \), ce qui impose \( d_2 = n-1 \).  
-La valeur \(2\) doit également être adjacente à \(n-1\), sous peine de produire une longueur déjà réalisable.  
-On fixe donc \( d_3 = 2 \).  
+La valeur \(2\) doit également être adjacente à \(n-1\), sous peine de produire une longueur déjà réalisable car nous venons de créer la distance $n$ avec $d_1=1$ et $d_2=n-1$.  
+On fixe donc \( d_3 = 2 \).
 Aucune des valeurs restantes ne peut donc être placée en \( d_4 \) sans engendrer une somme déjà atteinte auparavant.  
 Ainsi, la construction devient impossible pour \( n \geq 5 \).
 

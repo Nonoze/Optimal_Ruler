@@ -1,6 +1,6 @@
 \subsubsection*{(ii) Trouver une méthode de construction qui se rapproche de $m(\ell)$.}
 
-Pour approcher la valeur de $m(\ell)$, nous pouvons utiliser la méthode utilisée dans le point (ii). Elle consiste à utiliser pour un $1 \leq n \leq \ell$ fixé:
+Pour approcher la valeur de $m(\ell)$, nous avons développé une méthode de construction. Elle consiste à utiliser pour un $1 \leq n \leq \ell$ fixé:
 
 \begin{itemize}
 	\item Les $n$ premières graduations: $0, 1, 2, \ldots, n-1$ $\implies n$ graduations;
@@ -8,13 +8,22 @@ Pour approcher la valeur de $m(\ell)$, nous pouvons utiliser la méthode utilis�
 	\item Le nombre $\ell$ lui-même $\implies$ 1 graduation.
 \end{itemize}
 
+Cette solution est valide car:
+\begin{itemize}
+	\item Avec les $n$ premières graduations, on peut mesurer toutes les distances de 1 à $n-1$.
+	\item Pour chaque multiple de $n$ soustrait de 1, on peut mesurer toutes les distances de $(k-1)n$ à $kn - 1$ à l'aide des $n$ premières graduations.
+	\item Avec la graduation à $\ell$, on peut mesurer toutes les distances restantes jusqu'à $\ell$.
+\end{itemize}
+
 Ainsi, le nombre total de graduations utilisées pour un $n$ fixé est:
 \[
-k = n + \left\lfloor \frac{\ell}{n} \right\rfloor - 1 + 1 = n + \left\lfloor \frac{\ell}{n} \right\rfloor.
+n + \left\lfloor \frac{\ell}{n} \right\rfloor - 1 + 1 = n + \left\lfloor \frac{\ell}{n} \right\rfloor.
 \]
 
-Après certains essais, nous remarquons que la valeur de $k$ est minimisée lorsque $n$ est proche de $\sqrt{\ell}$. En effet, en posant $n = \lceil \sqrt{\ell} \rceil$, nous obtenons:
+En dérivant cette valeur par rapport à $n$, nous remarquons que le nombre de graduations est minimisé lorsque $n$ est proche de $\sqrt{\ell}$. En effet, en posant $n = \lceil \sqrt{\ell} \rceil$, nous obtenons un nombre de graduations d'environ:
 
 \[
-k = \lceil \sqrt{\ell} \rceil + \left\lfloor \frac{\ell}{\lceil \sqrt{\ell} \rceil} \right\rfloor \approx 2\sqrt{\ell}.
+\lceil \sqrt{\ell} \rceil + \left\lfloor \frac{\ell}{\lceil \sqrt{\ell} \rceil} \right\rfloor \approx 2\sqrt{\ell}.
 \]
+
+Cette méthode de construction nous permet donc d'affirmer que $m(\ell) \lesssim 2\sqrt{\ell}$.

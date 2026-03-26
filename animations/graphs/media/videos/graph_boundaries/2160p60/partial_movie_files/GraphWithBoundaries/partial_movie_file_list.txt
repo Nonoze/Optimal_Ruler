@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:/mnt/d/Documents/maths/PROJET/animations/graphs/media/videos/graph_boundaries/2160p60/partial_movie_files/GraphWithBoundaries/34461856_219779256_223132457.mp4'
+file 'file:/mnt/d/Documents/maths/PROJET/animations/graphs/media/videos/graph_boundaries/2160p60/partial_movie_files/GraphWithBoundaries/3166950890_490737107_2651929377.mp4'
+file 'file:/mnt/d/Documents/maths/PROJET/animations/graphs/media/videos/graph_boundaries/2160p60/partial_movie_files/GraphWithBoundaries/3166950890_2442289887_256337438.mp4'
+file 'file:/mnt/d/Documents/maths/PROJET/animations/graphs/media/videos/graph_boundaries/2160p60/partial_movie_files/GraphWithBoundaries/3166950890_1726093907_3760500280.mp4'
+file 'file:/mnt/d/Documents/maths/PROJET/animations/graphs/media/videos/graph_boundaries/2160p60/partial_movie_files/GraphWithBoundaries/3166950890_1027543527_299030167.mp4'
+file 'file:/mnt/d/Documents/maths/PROJET/animations/graphs/media/videos/graph_boundaries/2160p60/partial_movie_files/GraphWithBoundaries/3166950890_2552439942_2361279321.mp4'
+file 'file:/mnt/d/Documents/maths/PROJET/animations/graphs/media/videos/graph_boundaries/2160p60/partial_movie_files/GraphWithBoundaries/3166950890_2844360058_2812651213.mp4'

@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:/mnt/d/Documents/maths/PROJET/animations/graphs/media/videos/graph_with_function/2160p60/partial_movie_files/graph_function/34461856_1726931288_223132457.mp4'
+file 'file:/mnt/d/Documents/maths/PROJET/animations/graphs/media/videos/graph_with_function/2160p60/partial_movie_files/graph_function/3166950890_2030137205_36777841.mp4'
+file 'file:/mnt/d/Documents/maths/PROJET/animations/graphs/media/videos/graph_with_function/2160p60/partial_movie_files/graph_function/3166950890_272556225_445788867.mp4'
+file 'file:/mnt/d/Documents/maths/PROJET/animations/graphs/media/videos/graph_with_function/2160p60/partial_movie_files/graph_function/3166950890_2040099607_1385456099.mp4'
+file 'file:/mnt/d/Documents/maths/PROJET/animations/graphs/media/videos/graph_with_function/2160p60/partial_movie_files/graph_function/3166950890_1193549907_2658970226.mp4'
+file 'file:/mnt/d/Documents/maths/PROJET/animations/graphs/media/videos/graph_with_function/2160p60/partial_movie_files/graph_function/3166950890_3202061135_3066431471.mp4'
+file 'file:/mnt/d/Documents/maths/PROJET/animations/graphs/media/videos/graph_with_function/2160p60/partial_movie_files/graph_function/3166950890_2844360058_840911387.mp4'

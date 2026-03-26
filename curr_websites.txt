@@ -1,7 +1,0 @@
-http://www.luschny.de/math/rulers/index.html
-https://oeis.org/A335865
-http://www.luschny.de/math/rulers/rulercnt.html
-https://oeis.org/search?q=1%2C2%2C3%2C3%2C4%2C4%2C4%2C5%2C5%2C5%2C6%2C6%2C6%2C6%2C7%2C7%2C7%2C7&go=Search
-https://circles.math.ucla.edu/circles/lib/data/Handout-1650-1490.pdf
-https://en.wikipedia.org/wiki/Sparse_ruler
-https://en.wikipedia.org/wiki/Golomb_ruler

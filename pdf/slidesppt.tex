@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+
+\begin{document}
+
+% slide borne supérieure
+
+\begin{itemize}
+    \renewcommand{\labelitemi}{\textbullet}
+	\setlength\itemsep{1em}
+    \item Le nombre de graduations $m(\ell)$ est minimisé lorsque la taille du\newline premier bloc est proche de $\sqrt{\ell}$
+    \item $\sqrt{\ell}$ graduations pour le premier bloc, et $\sqrt{\ell}$ graduations éparpillées
+    \item[] $\implies$ Notre solution est d'environ $\sqrt{\ell} + \sqrt{\ell} = 2\sqrt{\ell}$ graduations
+\end{itemize}
+
+\vspace{1cm}
+
+% slide borne inférieure
+
+Il y a au moins $\sqrt{2\ell}$ graduations, car pour $\sqrt{2\ell}$ graduations, on a
+
+$\frac{\sqrt{2\ell}(\sqrt{2\ell}-1)}{2}$ distances possibles.
+
+\vspace{1cm}
+
+% slide victor
+
+\begin{itemize}
+    \renewcommand{\labelitemi}{\textbullet}
+	\setlength\itemsep{1em}
+    \item Objectif: trouver une fonction $f(\ell)=a\sqrt{\ell}+b$ qui approxime $m(\ell)$
+    \item Soit $x=\sqrt{\ell}$, on cherche à approximer $m(x^2)$ par une fonction affine $ax+b$
+    \item $f(\ell) = 1.721\sqrt{\ell}+0.208$ avec $R^2=0.998$ par régression linéaire
+\end{itemize}
+
+\vspace{1cm}
+
+% slide solutions parfaites 1
+
+\begin{itemize}
+    \renewcommand{\labelitemi}{\textbullet}
+	\setlength\itemsep{1em}
+    \item $n = m(\ell) \implies \ell = \frac{n(n-1)}{2}$
+    \item $d_i$ : distance entre les graduations $i$ et $i+1$
+    \item $d_1 + d_2 + \cdots + d_{n-1} = \ell$ et tous les $d_i$ sont distincts
+    \item[] $\implies$ $d$ est une permutation de $[1,\dots,n-1]$
+\end{itemize}
+
+\[
+\hspace*{-1.5cm}
+\color{blue!60!black}{d_1 + \cdots + d_{n-1}}
+\;\ge\;
+\color{green!40!black}{1 + 2 + \cdots + (n-1)}
+\]
+
+\vspace{-0.8cm}
+
+\[
+\hspace*{-1.5cm}
+\color{green!40!black}{1 + 2 + \cdots + (n-1)} = \frac{n(n-1)}{2} = \ell
+\]
+
+\vspace{1cm}
+
+% slide solutions parfaites 2
+
+\begin{itemize}
+    \renewcommand{\labelitemi}{\textbullet}
+	\setlength\itemsep{1em}
+    \item Objectif: ordonner le tableau $[1,\dots,n-1]$ pour trouver la solution parfaite
+    \item $d_i = 1$ ne peut être qu'à côté de $d_j=n-1$ $\implies$ cette valeur se trouve au bord
+    \item On a donc $d=[1, n-1, \ldots]$
+	\item $d_i=2$ ne peut être qu'à côté de $d_j=n-1$ $\implies$ impossible
+\end{itemize}
+
+\end{document}

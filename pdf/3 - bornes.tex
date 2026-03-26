@@ -3,7 +3,7 @@
 1. \textbf{Borne inférieure:} $m(\ell) \geq \frac{1+\sqrt{8\ell+1}}{2}$.
 
 \begin{itemize}[leftmargin=2cm]
-	\item \textbf{Démonstration:} Pour tout $n \in \mathbb{N}$, le nombre de paires $(i,j)$ avec $1 \leq i < j \leq n$ est donné par $\binom{n}{2} = \frac{n(n-1)}{2}$. Si le nombre de graduations est $m(\ell)$, alors le nombre de différences distinctes que l'on peut obtenir est au plus $\binom{m(\ell)}{2}$. Pour mesurer toutes les longueurs de 1 à $\ell$, il faut donc que:
+	\item \textbf{Démonstration:} Par le théorème des poignées de mains, si le nombre de graduations est $m(\ell)$, alors le nombre de paires de graduations et donc de distances possibles est $\binom{m(\ell)}{2}$. Pour mesurer toutes les longueurs de 1 à $\ell$, il faut donc que:
 	\[
 		\binom{m(\ell)}{2} \geq \ell
 	\]
@@ -28,12 +28,11 @@
 2. \textbf{Borne supérieure:} $m(\ell) \leq 2\sqrt{\ell} + 1$.
 
 \begin{itemize}[leftmargin=2cm]
-	\item \textbf{Démonstration:} Considérons une règle avec des graduations placées aux positions $0, 1, 2, \ldots, n-1$ et aux positions $2n - 1, 3n - 1, \ldots, kn - 1, \ell$ où $k = \lfloor \frac{\ell}{n} \rfloor$. Le nombre total de graduations est donc $n + k - 1 + 1 = n + k = n + \lfloor \frac{\ell}{n} \rfloor$.
-	Pour mesurer toutes les longueurs de 1 à $\ell$, il suffit de choisir $n$ tel que $n \approx \sqrt{\ell}$. En effet, en choisissant $n = \left\lceil \sqrt{\ell} \right\rceil$, on a:
-	\[
-		m(\ell) \leq n + \left\lfloor \frac{\ell}{n} \right\rfloor \leq \left\lceil \sqrt{\ell} \right\rceil + \left\lfloor \frac{\ell}{\left\lceil \sqrt{\ell} \right\rceil} \right\rfloor \leq \left\lceil \sqrt{\ell} \right\rceil + \left\lfloor \sqrt{\ell} \right\rfloor \leq 2 \left\lfloor \sqrt{\ell} \right\rfloor + 1
-	\]
-	Ceci établit la borne supérieure.
+	\item \textbf{Démonstration:} En considérant la méthode de construction établie au point \hyperref[sec:ii]{(ii)}, on a:
+		\[
+			m(\ell) \leq  \left\lceil \sqrt{\ell} \right\rceil + \left\lfloor \frac{\ell}{\left\lceil \sqrt{\ell} \right\rceil} \right\rfloor \leq \left\lceil \sqrt{\ell} \right\rceil + \left\lfloor \sqrt{\ell} \right\rfloor \leq 2 \left\lfloor \sqrt{\ell} \right\rfloor + 1
+		\]
+		Ceci établit la borne supérieure.
 \end{itemize}
 
 
@@ -44,8 +43,7 @@ Nous avons donc montré que:
 
 \begin{align*}
 	\frac{1 + \sqrt{1 + 8\ell}}{2} \leq m(\ell) \leq 2 \left\lfloor \sqrt{\ell} \right\rfloor + 1 \\
-	\implies \frac{1 + \sqrt{8\ell}}{2} \leq m(\ell) \leq 2 \left\lfloor \sqrt{\ell} \right\rfloor + 1 \\
-	\implies \frac{1}{2} + \frac{2\sqrt{2\ell}}{2} \leq m(\ell) \leq 2 \left\lfloor \sqrt{\ell} \right\rfloor + 1 \\
-	\implies \frac{1}{2} + \sqrt{2\ell} \leq m(\ell) \leq 2 \left\lfloor \sqrt{\ell} \right\rfloor + 1 \\
+	\implies \frac{1}{2} + \frac{\sqrt{8\ell}}{2} \leq m(\ell) \leq 2 \sqrt{\ell} + 1 \\
+	\implies \frac{2\sqrt{2\ell}}{2} \leq m(\ell) \leq 2 \sqrt{\ell} + 1 \\
 	\implies \sqrt{2\ell} \leq m(\ell) \leq 2\sqrt{\ell} + 1
 \end{align*}
